@@ -139,3 +139,14 @@ div.campo > input{
     width: calc(100% - 45.2px);
     transform: translateY(-13px);
 }
+
+footer{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer > a {
+    color: white;
+    margin: 10px;
+}
