@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .logo {
+    max-width: 100px;
+}
+
+.menu {
+    float: right;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.model {
+    position: relative;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 50px; /* Adicionado para garantir espaço suficiente para o footer */
+}
+
+.model-content {
+    position: relative;
+}
+
+.model-image {
+    width: 100%;
+    height: auto;
+}
+
+.model-info {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+}
+
+.model-info h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.model-info p {
+    font-size: 1.2em;
+}
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adicione media queries para ajustar o layout em diferentes tamanhos de tela */
+
+/* Seu código CSS existente */
+
+/* Adicione estilos para o menu hamburguer e esconda o menu por padrão */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.open {
+        display: block;
+    }
+
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Adicione esta parte para ajustar o tamanho da fonte em dispositivos móveis */
+    .menu a {
+        font-size: 14px;
+    }
+
+    .model-info {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .model-info h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .model-info p {
+        font-size: 1em;
+    }
+}
+
+
+/* Seu código CSS existente */
+
+/* Adicione estilos para o menu hamburguer e esconda o menu por padrão */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.open {
+        display: block;
+    }
+
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Adicione esta parte para ajustar o tamanho da fonte em dispositivos móveis */
+    .menu a {
+        font-size: 14px;
+    }
+
+    .model-info {
+        display: none; /* Oculta a seção model-info em dispositivos móveis */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.open {
+        display: block;
+    }
+
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
